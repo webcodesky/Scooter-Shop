@@ -32,7 +32,15 @@ export default function Testimonials() {
       ratting: 5,
     },
     {
-      name: "Hasan",
+      name: "Shahid Hasan",
+      title: "CEO Division",
+      image: "https://i.ibb.co.com/g9bDc7J/person-3.png",
+      message:
+        "These tags tell browsers to ignore anything between them. For example, say youre building a website.",
+      ratting: 5,
+    },
+    {
+      name: "Mahmud hasan",
       title: "CEO Division",
       image: "https://i.ibb.co.com/g9bDc7J/person-3.png",
       message:
@@ -70,16 +78,21 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 ">
       <PrimaryTitle>
-        <span className="text-[25px] lg:text-[50px] font-[700]">Testimonials</span>
+        <span className="text-[25px] lg:text-[50px] font-[700]">
+          Testimonials
+        </span>
       </PrimaryTitle>
-      <div className="glide-04 relative w-full">
+      <div className="glide-04 relative w-full ">
         {/*    <!-- Slides --> */}
         <div className="overflow-hidden" data-glide-el="track">
           <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex gap-10 w-full overflow-hidden p-0">
             {reviews.map((item, index) => (
-              <li key={index} className="shadow-xl py-[34px] px-[28px] border-[#FAFAFA] border-[1px]">
+              <li
+                key={index}
+                className="shadow-xl py-[34px] px-[28px] border-[#FAFAFA] border-[1px]"
+              >
                 {" "}
                 <TestimonialsCard review={item} />
               </li>
